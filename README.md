@@ -27,6 +27,8 @@ interacts with DynamoDB and returns a response to API Gateway. Lastly, API
 Gateway responds (JSON) to the consumer of the Finance APP service. Figure 1
 shows this scenario and API endpoints.
 <img src="./Immagini_copertina/architettura.png" alt="Alt text" width="600"/>
+
+
 The above architecture takes advantage of different AWS technologies:
 • Amazon API Gateway: Routes the clients’ requests to the appropriate Lambda
 function;
@@ -116,6 +118,8 @@ Concurrent excecutions : min:1, max:9, avg: 5.4521
 <img src="./Immagini_copertina/POST_Error_all.png" alt="Alt text" width="600"/>
 <img src="./Immagini_copertina/POST_Duration_all.png" alt="Alt text" width="600"/>
 <img src="./Immagini_copertina/POST_Concurrent_all.png" alt="Alt text" width="600"/>
+
+
 **Conclusions** :
 In this file, we have explained how our system works. The system also resists the tests
 we have done and it is robust to this because of the AWS infrastructure, which is a
