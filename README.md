@@ -1,6 +1,6 @@
 # Cloud-Finance
 AWS Serverless project 
-FinanceAPP overview
+**FinanceAPP overview**:
 Finance APP is a serverless service to manage a stock portfolio, it allows the user,
 thanks to a js backend, to interact and so edit his portfolio. Once the user start the
 service has to register or log in into his account to be able to make actions. So once
@@ -8,14 +8,14 @@ the user is successfully logged in he can edit his wallet and so: add a stock by
 its ticker code, visualize all the stocks that have been added to the wallet and finally
 remove stocks.
 
-Architecture
+**Architecture** :
 This section introduces the design solution for the case study, starting with a description
 of the serverless backend application. The focus is on outlining the application’s
 architecture, emphasizing its essential components and functionalities. Additionally,
 the section provides insights into the AWS services are utilized throughout the different
 stages of the application release process.
 
-Architecture Diagram
+**Architecture Diagram** :
 Finance APP represents a completely serverless backend application which incorporates
 an API enabling HTTP clients to carry out operations such as add stock, fetching,
 and deletion from a database. The API’s primary access point is developed using
@@ -26,6 +26,7 @@ receiving a request, API Gateway routes it to the appropriate Lambda function, w
 interacts with DynamoDB and returns a response to API Gateway. Lastly, API
 Gateway responds (JSON) to the consumer of the Finance APP service. Figure 1
 shows this scenario and API endpoints.
+
 The above architecture takes advantage of different AWS technologies:
 • Amazon API Gateway: Routes the clients’ requests to the appropriate Lambda
 function;
@@ -41,7 +42,7 @@ results;
 • CodeCommit: We used CodeCommit to save and update the code of the app
 and give access to Amplify.
 
-API
+**API** :
 According to microservices architecture, Front-end and Back-end are designed to be
 separate and highly maintainable, allowing flexible management of the application’s
 components. Here’s how this communication takes place with the specific API calls:
@@ -75,7 +76,7 @@ the DELETE request and deletes the stock. In the end, the user will see a messag
 alert that will tell that the stock has been successfully deleted and the browse will
 automatically refresh the page to display the edits.
 
-Test
+**Test** :
 After developing the whole infrastructure, we moved on to test it. In particular, we
 did a stress test to verify that the system would resist despite the high workload by
 scaling. To do this we have used:
@@ -111,7 +112,7 @@ Durations MAX: min: 56.82, max: 3,034, avg: 694.72;
 Durations MIN: min: 11.28, max: 56.82, avg: 26.463;
 Concurrent excecutions : min:1, max:9, avg: 5.4521
 
-Conclusions
+**Conclusions** :
 In this file, we have explained how our system works. The system also resists the tests
 we have done and it is robust to this because of the AWS infrastructure, which is a
 high availability and scalability framework. In fact with the test above we show that
