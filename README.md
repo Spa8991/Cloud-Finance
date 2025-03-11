@@ -132,5 +132,8 @@ we have done and it is robust to this because of the AWS infrastructure, which i
 high availability and scalability framework. In fact with the test above we show that
 when the number of requests is high, the lambda functions scales horizontally properly.
 Avalability is guaranteed, because of AWS SLA (Service Level Agreement) of
+
 • 99.95% of Lambda and API Gateway;
+
 • 99.99% of Cognito, DynamoDB and Amplify. so the goal of the test is achieved.
+
