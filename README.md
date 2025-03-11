@@ -32,15 +32,21 @@ shows this scenario and API endpoints.
 The above architecture takes advantage of different AWS technologies:
 • Amazon API Gateway: Routes the clients’ requests to the appropriate Lambda
 function;
+
 • Amazon Cognito: Authentication is achieved using AWS Cognito, so the user
 is able to register and verify the email, then its possible to log-in. Every user
 add and remove stocks form they wallet related to his account;
+
 • AWS Amplify: The application interface was developed based on Javascript
 and CSS, to give to the user the access to the different resources and show the
 results;
+
 • Amazon DynamoDB: Stores and retrieves stocks data;
+
 • Amazon CloudWatch: Monitor logs files; collects and track metrics;
+
 • AWS Lambda: Handles tasks like creation, reading and deleting of books;
+
 • CodeCommit: We used CodeCommit to save and update the code of the app
 and give access to Amplify.
 
